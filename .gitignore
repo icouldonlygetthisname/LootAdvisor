@@ -1,0 +1,8 @@
+# Personal Raidbots report exports - never commit real character data
+/Imports/Raid/*.json
+/Imports/MPlus/*.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp

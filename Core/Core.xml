@@ -1,0 +1,47 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+
+	<!-- Addon namespace / module registry -->
+	<Include file="LAAddon.lua"/>
+
+	<!-- Constants (defaults table, colors, slash command) -->
+	<Include file="Constants.lua"/>
+
+	<!-- Small shared helpers -->
+	<Include file="Utils.lua"/>
+
+	<!-- Data access layer -->
+	<Include file="..\Data\ReportDB.lua"/>
+	<Include file="..\Data\LootHistoryDB.lua"/>
+	<Include file="..\Data\ConfigDB.lua"/>
+
+	<!-- Import pipeline -->
+	<Include file="..\Import\Parser.lua"/>
+	<Include file="..\Import\ImportService.lua"/>
+
+	<!-- Services that only depend on Data/Import -->
+	<Include file="..\Service\UpgradeLookup.lua"/>
+	<Include file="..\Service\CurrencyAdvisor.lua"/>
+
+	<!-- Drop banner UI (loads before LootWatcher, which uses it) -->
+	<Include file="..\UI\DropBanner.lua"/>
+
+	<!-- Live loot watching (uses DropBanner + UpgradeLookup) -->
+	<Include file="..\Service\LootWatcher.lua"/>
+
+	<!-- Remaining windows -->
+	<Include file="..\UI\ImportFrame.lua"/>
+	<Include file="..\UI\RaidWindow.lua"/>
+	<Include file="..\UI\MPlusWindow.lua"/>
+
+	<!-- Event dispatch + slash commands (reference the windows above) -->
+	<Include file="..\Service\EventHandler.lua"/>
+	<Include file="..\Service\CommandLine.lua"/>
+
+	<!-- Options panel -->
+	<Include file="..\Options\LAOptions.lua"/>
+
+	<!-- Entry point (must load last: creates the AceAddon object and wires
+	     everything above together in OnInitialize/OnEnable) -->
+	<Include file="LootAdvisor.lua"/>
+
+</Ui>
