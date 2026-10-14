@@ -1,4 +1,4 @@
-## Interface: 120100
+## Interface: 120100, 120105
 ## Title: LootAdvisor
 ## Notes: Roll/pass loot advisor powered by your own Raidbots Droptimizer reports. Tells you which raid and Mythic+ items are worth rolling on, ranks dungeons by biggest available upgrade, and recommends the best bonus-roll target.
 ## Author: LootAdvisor
