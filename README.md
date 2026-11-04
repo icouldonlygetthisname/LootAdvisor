@@ -54,4 +54,8 @@ Built with [Ace3](https://www.wowace.com/projects/ace3) (AceAddon, AceConsole, A
 
 ## License
 
-All rights reserved (for now) - update this if you decide to open it up.
+Copyright (C) 2026 icouldonlygetthisname
+
+LootAdvisor is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See [LICENSE](LICENSE) for the full text.
+
+The vendored Ace3 libraries in `ExternalLibs/` (including CallbackHandler) keep their own BSD-style license - see [ExternalLibs/Ace3-LICENSE.txt](ExternalLibs/Ace3-LICENSE.txt). LibStub is public domain.

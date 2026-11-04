@@ -4,7 +4,7 @@
 ## Author: LootAdvisor
 ## Version: 1.0.0
 ## SavedVariables: LootAdvisorDB, LootAdvisorImportsDB
-## X-License: All Rights Reserved
+## X-License: GPL-3.0-or-later
 
 ExternalLibs\Libs.xml
 Locales\Locales.xml
